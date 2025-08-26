@@ -1,0 +1,7 @@
+# Włączone reguły
++no-trailing-spaces
++always-ff-non-blocking
++mismatched-labels
++suspicious-semicolon
+
+# Wyłączone reguły
