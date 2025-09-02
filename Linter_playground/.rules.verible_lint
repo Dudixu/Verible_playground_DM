@@ -1,7 +1,49 @@
-# Włączone reguły
+# ----------------------------
+# Formatowanie i struktura
+# ----------------------------
++line-length=length:120
++no-tabs
 +no-trailing-spaces
-+always-ff-non-blocking
-+mismatched-labels
-+suspicious-semicolon
++posix-eof
++module-filename
++package-filename
++one-module-per-file
 
-# Wyłączone reguły
+# ----------------------------
+# Konstrukcje always / case
+# ----------------------------
++always-comb
++always-comb-blocking
++always-ff-non-blocking
++case-missing-default
++explicit-begin
+
+# ----------------------------
+# Nazewnictwo
+# ----------------------------
+
+# sygnały w lower_snake_case
++signal-name-style=style_regex:^[a-z][a-z0-9_]*$
+
+# parametry i stałe w ALL_CAPS
++parameter-name-style=parameter_style_regex:^[A-Z0-9_]+$
+
+# typedef enum zakończone _t
++enum-name-style=style_regex:^[a-z0-9_]+_t$
+
+# ----------------------------
+# Parametry/liczby
+# ----------------------------
++explicit-parameter-storage-type
++undersized-binary-literal
++truncated-numeric-literal
++packed-dimensions-range-ordering
++unpacked-dimensions-range-ordering
+
+# ----------------------------
+# Dobre praktyki
+# ----------------------------
++forbid-defparam
++generate-label
++generate-label-prefix
++suggest-parentheses
